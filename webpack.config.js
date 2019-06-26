@@ -19,6 +19,13 @@ module.exports = {
     filename: "bundle.js",
   },
   plugins: [
+    new webpack.ProvidePlugin({
+        // inject ES5 modules as global vars
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery',
+        Tether: 'tether'
+    }),
     new HtmlWebpackPlugin({ template: "./src/public/index.html" }),
     new ExtractTextPlugin("styles.css"),
     new webpack.DefinePlugin({

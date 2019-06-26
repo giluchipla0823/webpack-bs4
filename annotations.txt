@@ -1,0 +1,1 @@
+https://github.com/StanislavMayorov/webpack2-bootstrap-example/blob/master/webpack.config.js
